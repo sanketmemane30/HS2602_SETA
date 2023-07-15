@@ -1,0 +1,29 @@
+<!-- cart.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <h2>Cart</h2>
+    <ul id="cartItems"></ul>
+
+    <script>
+      // Retrieve the cart data from localStorage
+      const cartItems = JSON.parse(localStorage.getItem('cart'));
+
+      // Get the ul element where the cart items will be displayed
+      const cartList = document.getElementById('cartItems');
+
+      // Loop through the cart items and create list items to display them
+      cartItems.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name}: $${item.price}`;
+        cartList.appendChild(li);
+      });
+    </script>
+</body>
+</html>

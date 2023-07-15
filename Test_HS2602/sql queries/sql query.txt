@@ -1,0 +1,25 @@
+SELECT hotel_name As hotel_info, hotel_type
+FROM Hotel_details
+ORDER BY hotel_name DESC;
+SELECT car_id, car_name, owner_id
+FROM cars
+WHERE car_type IN ('Hatchback', 'SUV')
+ORDER BY car_id;
+question 4:
+
+udb.store.aggregate([
+  {
+    $match: {
+      _id: ObjectId('64b22054966b639e4c1429b8') ObjectId value
+    }
+  },
+  {
+    $project: {
+      "name": 1,
+      "description": 1,
+      "price": 1,
+      "category": 1,
+      "stockQuantity": 1
+    }
+  }
+])

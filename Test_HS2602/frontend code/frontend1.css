@@ -1,0 +1,12 @@
+/* Add your CSS styles here */
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    /* Define responsive styles */
+  
+    body {
+      background-image: url('farmers.png');
+      background-size: 100;
+      background-position: center;
+    }
+  }

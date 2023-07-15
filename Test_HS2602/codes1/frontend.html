@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.harbingergroup.com/wp-content/themes/harbinger/images/favicon.png"
+        type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>CropConnection</title>
+</head>
+<body>
+
+
+
+
+    <!-- ===== Navigation Bar =====  -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="./index.html">Crops </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#id-navbarNav"
+                aria-controls="id-navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="id-navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Crops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn  btn-primary">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- ===== Main Contents =====  -->
+    <div>
+        <section id="courses" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Crops</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img class="card-img-top" src="download.jfif" width="100" height="200" alt="Java Course">
+            <div class="card-body">
+              <h5 class="card-title">Casava crop</h5>
+              <p class="course-price">$4</p>
+              <p class="course-description">Cassava is a starchy root crop cultivated primarily in tropical regions, providing a valuable source of food and income for millions of people worldwide. It is known for its resilience, adaptability, and high carbohydrate content.</p>              
+              <a href="cart.html" class="btn btn-success" onclick="addToCart('Casava crop', '$4')">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img class="card-img-top" src="wheat.jfif" width="100" height="200" alt="Python Course">
+            <div class="card-body">
+              <h5 class="card-title">Wheat crop</h5>
+              <p class="course-price">$5</p>
+              <p class="course-description">Wheat is a versatile cereal crop widely cultivated for its edible grains, used in the production of various food products like bread, pasta, and pastries. It is a staple crop in many countries, offering a significant source of dietary energy and nutrients.</p>
+          <a href="cart.html" class="btn btn-success" onclick="addToCart('Wheat crop', '$5')">Add to cart</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img class="card-img-top" src="rice.jfif" height="200" alt="C++ Course">
+            <div class="card-body">
+              <h5 class="card-title">Rice crop</h5>
+              <p class="course-price">$6</p>
+              <p class="course-description">Rice is a staple food crop that is a primary source of nutrition for more than half of the world's population. It is a versatile grain cultivated in diverse environments, providing a high-calorie energy source and serving as a dietary foundation in many cultures.</p>
+              <a href="cart.html" class="btn btn-success" onclick="addToCart('Rice crop', '$6')">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img class="card-img-top" src="sweatpotato.jfif" width="100" height="200" alt="MySQL Course">
+            <div class="card-body">
+              <h5 class="card-title">Sweatpotato crop</h5>
+              <p class="course-price">$7/p>
+              <p class="course-description">Sweet potatoes are root vegetables that are rich in vitamins, minerals, and dietary fiber. They are grown worldwide and are known for their sweet taste, versatility in cooking, and ability to thrive in diverse climatic conditions.</p>
+              <a href="MySQL.html" class="btn btn-success">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img class="card-img-top" src="maize.jfif" width="100" height="200" alt="React Course">
+            <div class="card-body">
+              <h5 class="card-title">Maize Crops</h5>
+              <p class="course-price">$9</p>
+              <p class="course-description">Maize, also known as corn, is a widely cultivated cereal crop known for its high yield and versatility in various industries. It serves as a vital food source for humans and animals, while also being used in the production of biofuels, feed, and industrial products.</p>
+              <a href="React.html" class="btn btn-success">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img class="card-img-top" src="pulses.jfif" width="100" height="200" alt="Angular Course">
+            <div class="card-body">
+              <h5 class="card-title">Pulses crop</h5>
+              <p class="course-price">$9</p>
+              <p class="course-description">Sweet potatoes are root vegetables that are rich in vitamins, minerals, and dietary fiber. They are grown worldwide and are known for their sweet taste, versatility in cooking, and ability to thrive in diverse climatic conditions.</p>
+              <a href="Angular.html" class="btn btn-success">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+    <!-- ===== Footer =====  -->
+    <div>
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>H-Learning</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non tincidunt lorem, nec
+                            eleifend
+                            est. Duis pellentesque bibendum elit.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Courses</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li>Email: info@example.com</li>
+                            <li>Phone: +1 123-456-7890</li>
+                            <li>Address: 123 Main Street, City, Country</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- ===== Scroll To Top =====  -->
+    <div class="scrbtn hide" id="top">
+        <div class="icon"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
